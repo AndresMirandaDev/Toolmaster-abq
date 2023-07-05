@@ -32,7 +32,7 @@ export default function HomeScreen() {
         <View style={styles.logoContainer}>
           <Image
             source={require('../assets/logo.png')}
-            resizeMode="contain"
+            resizeMode="cover"
             style={styles.logo}
           />
         </View>
@@ -72,14 +72,15 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     backgroundColor: colors.primaryOpacity,
-    padding: 10,
     borderWidth: 1,
     borderColor: colors.yellow,
     borderRadius: 50,
+    padding: 5,
     position: 'absolute',
     zIndex: 10,
-    top: -10,
+    top: -5,
     left: 20,
+    overflow: 'hidden',
   },
   username: {
     fontSize: 25,
